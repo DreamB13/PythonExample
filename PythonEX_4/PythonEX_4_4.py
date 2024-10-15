@@ -22,3 +22,8 @@ a = [1,2,3,4]
 b = [*a,5]
 print(b)    #a리스트는 그대로 보존
 print(*a,5)
+
+a = [1,2,3,4,5]
+b = a.copy()
+b.append(6)
+print(b)
