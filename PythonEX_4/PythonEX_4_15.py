@@ -17,3 +17,4 @@ for i, value in enumerate(example_list):
     print(" {}번째 요소는 {}입니다.".format(i, value))
 
 ## reverse(), enumerate()함수는 함수 전용출력이 안된다.
+# for문엔 함수를 곧바로 넣어서 사용
