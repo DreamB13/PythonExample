@@ -3,7 +3,7 @@ def flatten(data):
     for item in data:
         if type(item) == list:
             output += flatten(item)         # 리스트끼리 '연결'
-        else:
+        else: 
             output.append(item)
     return output
 example = [[1,2,3],[4,[5,6]],7,[8,9]]
