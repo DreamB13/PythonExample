@@ -50,11 +50,15 @@
 # for i in range(len(vertical_array)):
 #     print(vertical_array[i], end='')
 # 4번 문제 --------------------------------------------
-array = ['1'*100]*100
+array = [['1']*100]*100   # '1'이 100개인 리스트가 100개  [['1','1','1'...],[...],[...],....]
 square = []
 count = int(input())
 for i in range(count):
     x,y = map(int,input().split())
-    square.append([x,y,x+10,y+10])
+    if x == 0:
+        x = 1
+    elif y == 0:
+        y = 1
+    square.append([x,y,x+10,y+10])          # square [[x,y,x+10,y+10],[...].[...]]
 for i in range(count):
-    array[]
+    array[(square[i][0]-1):(square[i][2])] = '0'
