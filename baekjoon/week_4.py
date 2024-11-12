@@ -32,14 +32,29 @@
 # num_index = max_array.index(num_max)
 # print(num_max)
 # print(max_array.index(num_max)+1, array[num_index].index(num_max)+1)
-# 3번 문제 --------------------------------------------
-string_array = []
-length = []
-vertical_array = []
-for i in range(5):
-    array = list(input())
-    string_array.append(array)
-
-for i in string_array:
-    length.append(len(i))
-
+# # 3번 문제 --------------------------------------------
+# string_array = []
+# len_string = []
+# vertical_array = []
+# for i in range(5):
+#     array = list(input())
+#     string_array.append(array)
+# for i in string_array:
+#     len_string.append(len(i))
+#     max_len = max(len_string)
+# for i in range(max_len):
+#     for j in range(5):
+#         if i >= len(string_array[j]):
+#             continue
+#         vertical_array.append(string_array[j][i])
+# for i in range(len(vertical_array)):
+#     print(vertical_array[i], end='')
+# 4번 문제 --------------------------------------------
+array = ['1'*100]*100
+square = []
+count = int(input())
+for i in range(count):
+    x,y = map(int,input().split())
+    square.append([x,y,x+10,y+10])
+for i in range(count):
+    array[]
