@@ -43,7 +43,17 @@
 #         print(f'{num} is NOT perfect.')
 # 4번 문제 ----------------------------------------------
 count = int(input())
-if count > 100:
+if count > 100 or count < 1:
     print('error')
 else:
-    
+    array=list(map(int,input().split()))
+    output = []
+    if len(array) != count:
+        print('error')
+    else:
+        for i in array:
+            for j in i:
+                if i%j==0:
+                    array.remove(i)
+                    continue
+    print(array)
