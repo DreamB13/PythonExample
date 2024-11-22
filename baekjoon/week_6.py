@@ -73,3 +73,11 @@
 #         print('Scalene')
 # 8번 문제 ---------------------------------------------------
 triangle = list(map(int,input().split()))
+c=max(triangle)
+triangle.remove(c)
+a,b=triangle[0],triangle[1]
+while True:
+    if c >= (a+b):
+        c -= 1
+    else:
+        break
